@@ -1,0 +1,105 @@
+
+.card{
+  background-image: url(../img/pr1.png);
+  background-size: cover;
+  padding: 15rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card-content{
+  padding: 1.5em;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
+  transform: translateY(65%);
+  transition: transform 500ms ease;
+}
+
+.card-content > *{
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+.card:hover .card-content{
+  transform: translateY(0);
+}
+
+.card:hover .card-content > *{
+  opacity: 1;
+}
+
+.card-content .button{
+    padding: .6em 1.2em;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    text-decoration: none;
+}
+
+.card-content .button:hover{
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.card-content .button-secondary{
+  padding: .6em 1em;
+  font: normal 500 16px/20px var(--roboto);
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  background: white;
+  color: black;
+  background-clip: padding-box;
+  transition: background .6s ease;
+  text-decoration: none;
+}
+
+.card-content .button-secondary:hover{
+  background: transparent;
+  color: whitesmoke;
+  box-shadow: var(--box-shadow2);
+}
+
+.card-content .button::after, .card-content .button-secondary::after{
+  position:absolute;
+  top: -2px; left: -2px;
+  bottom: -2px; right: -2px;
+  content: '';
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.second{
+  background-image: url(../img/pr2.png);
+}
+
+.third{
+  background-image: url(../img/pr3.png);
+}
+
+.fourth{
+  background-image: url(../img/pr4.png);
+}
+
+.fifth{
+  background-image: url(../img/pr5.png);
+}
+
+.sixth{
+  background-image: url(../img/pr6.png);
+}

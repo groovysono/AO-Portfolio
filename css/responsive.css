@@ -1,0 +1,44 @@
+
+
+/* if view is equal or less than 340px */
+@media only screen and (max-width: 340px){
+  .header-area .main-menu .navbar,
+  .header-area .main-menu .navbar .navbar-brand,
+  .site-main{
+    margin: 0;
+    padding: 2%;
+  }
+  .site-main > .services-area .services{
+    width: 13rem;
+  }
+}
+
+@media only screen and (max-width: 496px){
+.about-area .about-image{
+    width: 300px;
+    height: 300px;
+    
+  }
+}
+
+@media only screen and (max-width: 792px){
+  .site-main .about-area .about-title h2 > span{
+    font-size: 31px;
+    letter-spacing: 10px;
+  }
+  
+}
+
+@media only screen and (max-width: 1910px){
+  .header-area .main-menu .navbar{
+    padding: 1rem;
+  }
+  .container{
+    max-width: 90%;
+  }
+  .site-main,
+  .site-main .services-area .services-title,
+  .site-main .about-title{
+    padding: 3% 4%;
+  }
+}
